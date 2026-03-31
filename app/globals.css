@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-brand-sand: #dcb897;
+  --color-brand-sand-light: #f4e8dc;
+  --color-brand-turquoise: #0097a7;
+  --color-brand-turquoise-dark: #006064;
+  --color-brand-dark: #263238;
+  --color-brand-warm-white: #fdfbf7;
+  
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-warm-white text-brand-dark font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-brand-dark;
+  }
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
